@@ -4,16 +4,17 @@ table = YAML::load_file(File.join(__dir__, 'table.yaml'))
 
 head_align = ""
 header = ""
-table['header'].count.times do |i|
+splitted_header = table['header'].split(/[[:blank:]]/)
+splitted_header.count.times do |i|
   if(table['meta']['vertical_bar'] == i + 1)
     head_align += 'c|'
   else
     head_align += 'c'
   end
   if(i == 0)
-    header += "$#{table['header'][i]}$"
+    header += "$#{splitted_header[i]}$"
   else
-    header += " & $#{table['header'][i]}$"
+    header += " & $#{splitted_header[i]}$"
   end
 end
 
