@@ -1,0 +1,18 @@
+meta:
+  vertical_bar: 2
+  bold: 6
+header:
+  - p_0
+  - p_1
+  - "(p_0"
+  - \leftrightarrow
+  - p_1)
+  - \rightarrow
+  - (p_0
+  - \vee
+  - p_1)
+data:
+  - "0 0 0 1 0 0 0 0 0"
+  - "1 0 0 0 1 1 0 1 1"
+  - "0 1 1 0 0 1 1 1 0"
+  - "1 1 1 1 1 1 1 1 1"
